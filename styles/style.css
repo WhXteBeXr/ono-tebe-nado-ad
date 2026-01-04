@@ -124,10 +124,13 @@
 }
 
 .section__h2-title {
-  padding: 0 40px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
+}
+
+.section-lots__title {
+  padding: 0 40px;
 }
 
 .section__lots-list {
@@ -197,24 +200,60 @@
 }
 
 .section-about {
+  display: grid;
+  grid-template-columns: 334px 693px;
+  min-height: 596px;
   margin-bottom: 180px;
+  gap: 25px;
+}
+
+.section-about__logo-padding {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  width: 240px;
+  margin-top: 35px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .section__about-logo {
+  width: 148px;
+  height: 114px;
+  background-size: cover;
+}
 
+.section-about__text-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section-about__title {
+  margin-top: 136px;
 }
 
 .section__about-text {
+  font-weight: 400;
+  font-size: 20px;
+  align-self: end;
+  justify-self: end;
+}
+
+.first-paragraph {
+  margin-bottom: 24px;
 }
 
 .footer__nav {
 }
 
-.social {
+.socials {
 }
 
-.social__list {
+.socials__list {
 }
 
-.social-list__item {
+.socials-list__item {
 }
