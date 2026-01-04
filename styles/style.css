@@ -17,6 +17,7 @@
   display: flex;
   gap: 32px;
   list-style: circle;
+  text-transform: lowercase;
 }
 
 .current-page {
@@ -45,6 +46,9 @@
 }
 
 .section__cover {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   width: 100%;
   height: 757px;
   background-size: cover;
@@ -54,11 +58,6 @@
 
 .overlay {
   position: absolute;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  align-items: center;
-  padding: 50px;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -66,11 +65,20 @@
   z-index: 1;
 }
 
+.section-banner__elements-position {
+  display: grid;
+  height: 100%;
+  padding: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
 .section__cover-title {
   font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
   letter-spacing: 30%;
+  align-self: center;
 }
 
 .section__cover-title .span {
@@ -93,7 +101,6 @@
 .section__cover-description {
   display: flex;
   align-items: center;
-  align-self: end;
   justify-content: space-between;
 }
 
@@ -113,11 +120,11 @@
 }
 
 .section-lots {
-  padding: 0 40px;
   margin-bottom: 120px;
 }
 
 .section__h2-title {
+  padding: 0 40px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -126,15 +133,67 @@
 .section__lots-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
+  list-style: none;
+  gap: 25px;
+  margin: 27px 0 30px 0;
 }
 
 .section__lots-list__item {
+  width: auto;
+  min-height: 596px;
 
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.section__lots-list__item__first {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.section__lots-list__item__second {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.section__lots-list__item__third {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.section__lots-list__item a {
+  text-decoration: none;
+}
+
+.lots-list__item-container {
+  position: relative;
+  height: 100%;
+}
+
+.lots-list__item-container__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  height: 100%;
+}
+
+.lots-list__item__title {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.lots-list__item__text {
+  font-weight: 400;
+  font-size: 20px;
+  justify-self: end;
 }
 
 .section__view-more-link {
-
+  padding: 0 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: lowercase;
 }
 
 .section-about {
