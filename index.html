@@ -10,97 +10,124 @@
   <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
+
 <header class="header">
-  <nav class="header__nav">
+  <nav class="header__nav" aria-label="Навигация по страницам сайта" role="navigation">
     <ul class="nav-list">
       <li>
-        <a class="nav-list__item" href="#"></a>
+        <a class="nav-list__item" href="#">Главная</a>
       </li>
       <li>
-        <a class="nav-list__item" href="#"></a>
+        <a class="nav-list__item" href="#">Посмотреть лоты</a>
       </li>
       <li>
-        <a class="nav-list__item" href="#"></a>
+        <a class="nav-list__item" href="#">Об аукционе</a>
       </li>
     </ul>
   </nav>
-  <a class="logo" href="index.html">
-    <img class="logo__img" src="images/logo-black.svg" alt="Логотип Оно Тебе Надо"/>
+  <a class="header__logo" href="index.html">
+    <img class="haeder__logo-img" src="images/logo-black.svg" alt="Логотип &quot;Оно Тебе Надо&quot;"/>
   </a>
   <address class="header__address">
 
   </address>
 </header>
+
 <main>
-  <section class="section">
+
+  <!-- Обложка в теле сайта -->
+
+  <section>
     <div class="section__cover">
-      <h1 class="section__cover-title"></h1>
-      <h1 class="section__cover-title"></h1>
-      <h1 class="section__cover-title"></h1>
+      <h1 class="section__cover-title">Оно</h1>
+      <h1 class="section__cover-title">Тебе</h1>
+      <h1 class="section__cover-title">Надо</h1>
     </div>
     <div class="section__cover-description">
-      <p></p>
-      <button class="section__cover-button"></button>
+      <p class="section__cover-description__text">Аукцион вещей, в которые никто не верил</p>
+      <button class="section__cover-description__button">Сделать ставку</button>
     </div>
   </section>
-  <section class="section">
-    <h2 class="section__lots-title"></h2>
+
+  <!-- Раздел лотов -->
+
+  <section>
+    <h2 class="section__lots-title">Лоты</h2>
     <ul class="section__lots-list">
-      <li class="section__lots-list-item">
+      <li class="section__lots-list__item">
         <a href="#">
           <article></article>
         </a>
       </li>
-      <li class="section__lots-item">
+      <li class="section__lots-list__item">
         <a href="#">
           <article></article>
         </a>
       </li>
-      <li class="section__lots-item">
+      <li class="section__lots-list__item">
         <a href="#">
           <article></article>
         </a>
       </li>
     </ul>
-    <a class="section__view-more-link" href="#"></a>
+    <a class="section__view-more" href="#">Посмотреть больше</a>
   </section>
-  <section class="section">
+
+  <!-- Раздел об аукционе -->
+
+  <section>
     <div>
-      <img src="#" alt="Логотип Оно Тебе Надо"/>
+      <img src="images/logo-white.svg" alt="Логотип &quot;Оно Тебе Надо&quot;"/>
     </div>
     <div>
-      <h2 class="section__about-title"></h2>
-      <p class="section__about-text"></p>
+      <h2 class="section__about-title">Об аукционе</h2>
+      <p class="section__about-text">
+        Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны
+        были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может
+        нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+      </p>
+      <p class="section__about-text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и
+        прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+        на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру.
+        Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
     </div>
   </section>
 </main>
+
 <footer class="footer">
   <address class="header__address">
 
   </address>
-  <nav class="footer__nav">
+  <nav class="footer__nav" aria-label="Навигация по страницам сайта" role="navigation">
     <ul class="nav-list">
       <li>
-        <a class="nav-list__item" href="#"></a>
+        <a class="nav-list__item" href="#">Главная</a>
       </li>
       <li>
-        <a class="nav-list__item" href="#"></a>
+        <a class="nav-list__item" href="#">Посмотреть лоты</a>
       </li>
       <li>
-        <a class="nav-list__item" href="#"></a>
+        <a class="nav-list__item" href="#">Об аукционе</a>
       </li>
     </ul>
   </nav>
-  <nav class="footer__social">
+
+  <nav class="social" aria-label="Навигация по социальным сетям проекта" role="navigation">
     <ul class="social-list">
       <li>
-        <a class="social-list__item" href="#"></a>
+        <a class="social-list__item" href="#">
+          <img class="social-list__item__image" src="images/yt.svg" alt="YouTube"/>
+        </a>
       </li>
       <li>
-        <a class="social-list__item" href="#"></a>
+        <a class="social-list__item" href="#">
+          <img class="social-list__item__image" src="images/vk.svg" alt="VK"/>
+        </a>
       </li>
       <li>
-        <a class="social-list__item" href="#"></a>
+        <a class="social-list__item" href="#">
+          <img class="social-list__item__image" src="images/pinterest.svg" alt="Pinterest"/>
+        </a>
       </li>
     </ul>
   </nav>
