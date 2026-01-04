@@ -7,6 +7,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
+  justify-items: center;
   align-items: center;
   padding: 96px 50px;
   font-size: 18px;
@@ -15,14 +16,20 @@
 
 .nav-list {
   display: flex;
-  gap: 32px;
   list-style: circle;
   text-transform: lowercase;
 }
 
+.header__nav-list .nav-list {
+  gap: 32px;
+}
+
 .current-page {
   text-decoration: none;
-  /* TODO: Убрать точку перед текущей страницей */
+}
+
+.current-item {
+  list-style: none;
 }
 
 .header__logo-img {
@@ -32,11 +39,10 @@
 
 .address {
   max-width: 240px;
-  justify-self: end;
 }
 
-.section {
-  padding: 120px 0;
+.header__address {
+  justify-self: end;
 }
 
 .section-banner {
@@ -53,7 +59,6 @@
   height: 757px;
   background-size: cover;
   background-image: url("../images/cover.jpg");
-  z-index: -1;
 }
 
 .overlay {
@@ -246,14 +251,31 @@
   margin-bottom: 24px;
 }
 
-.footer__nav {
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px;
+  justify-items: center;
 }
 
-.socials {
+.footer__nav-list .nav-list{
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
 }
 
-.socials__list {
+.socials-list__item__image {
+  width: 48px;
+  height: 48px;
+}
+
+.socials-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
 }
 
 .socials-list__item {
+  height: 100%;
+  width: 100%;
 }
