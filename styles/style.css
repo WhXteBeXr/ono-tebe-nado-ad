@@ -12,7 +12,7 @@
   grid-template-columns: 1fr min-content 1fr;
   justify-items: center;
   align-items: center;
-  padding: 90px 50px;
+  padding: 85px 50px;
   font-size: 18px;
   font-style: normal;
 }
@@ -74,7 +74,7 @@
 .section-banner__elements-position {
   display: grid;
   height: 100%;
-  padding: 50px;
+  padding: 70px 50px 50px 50px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
@@ -89,7 +89,7 @@
 
 .section__cover-title .span {
   display: block;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .section__cover-title__first-word {
@@ -120,7 +120,7 @@
 
 .section__cover-description__button {
   box-sizing: content-box;
-  padding: 12px 32px;
+  padding: 15px 45px;
   text-transform: uppercase;
   border: 1px solid white;
   background-color: transparent;
