@@ -262,7 +262,7 @@
   justify-items: center;
 }
 
-.footer__nav-list .nav-list{
+.footer__nav-list .nav-list {
   flex-direction: column;
   align-items: center;
   list-style: none;
