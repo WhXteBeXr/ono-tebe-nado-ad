@@ -9,27 +9,30 @@
   <link rel="stylesheet" href="styles/global.css"/>
   <link rel="stylesheet" href="styles/style.css"/>
 </head>
-<body>
+<body class="page">
 
 <header class="header">
-  <nav class="header__nav" aria-label="Навигация по страницам сайта" role="navigation">
+  <nav aria-label="Навигация по страницам сайта" role="navigation">
     <ul class="nav-list">
       <li>
-        <a class="nav-list__item" href="#">Главная</a>
+        <a class="current-page" href="#">Главная</a>
       </li>
       <li>
-        <a class="nav-list__item" href="#">Посмотреть лоты</a>
+        <a href="#">Посмотреть лоты</a>
       </li>
       <li>
-        <a class="nav-list__item" href="#">Об аукционе</a>
+        <a href="#">Об аукционе</a>
       </li>
     </ul>
   </nav>
-  <a class="header__logo" href="index.html">
-    <img class="haeder__logo-img" src="images/logo-black.svg" alt="Логотип &quot;Оно Тебе Надо&quot;"/>
+  <a>
+    <img class="header__logo-img" src="images/logo-black.svg" alt="Логотип &quot;Оно Тебе Надо&quot;"/>
   </a>
-  <address class="header__address">
-
+  <address class="address">
+    <a href="tel:+99995555555">+9 999 555 5555</a>
+    <br>
+    <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+    <p>наб. Принсенграхт 263- 265, Амстердам</p>
   </address>
 </header>
 
@@ -37,50 +40,69 @@
 
   <!-- Обложка в теле сайта -->
 
-  <section>
+  <section class="section-banner">
     <div class="section__cover">
-      <h1 class="section__cover-title">Оно</h1>
-      <h1 class="section__cover-title">Тебе</h1>
-      <h1 class="section__cover-title">Надо</h1>
-    </div>
-    <div class="section__cover-description">
-      <p class="section__cover-description__text">Аукцион вещей, в которые никто не верил</p>
-      <button class="section__cover-description__button">Сделать ставку</button>
+      <div class="overlay">
+        <h1 class="section__cover-title">
+          <span class="section__cover-title__first-word span">Оно</span>
+          <span class="section__cover-title__second-word span">Тебе</span>
+          <span class="section__cover-title__third-word span">Надо</span>
+        </h1>
+        <div class="section__cover-description">
+          <p class="section__cover-description__text">Аукцион вещей, в которые никто не верил</p>
+          <button class="section__cover-description__button">Сделать ставку</button>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Раздел лотов -->
 
-  <section>
-    <h2 class="section__lots-title">Лоты</h2>
+  <section class="section-lots">
+    <h2 class="section__h2-title">Лоты</h2>
     <ul class="section__lots-list">
       <li class="section__lots-list__item">
         <a href="#">
-          <article></article>
+          <article>
+            <h3 class="lots-list__item__title">Фильм режиссёра, который бросил киношколу</h3>
+            <p class="lots-list__item__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если
+              бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+          </article>
         </a>
       </li>
       <li class="section__lots-list__item">
         <a href="#">
-          <article></article>
+          <article>
+            <h3 class="lots-list__item__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+            <p class="lots-list__item__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами
+              на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы,
+              начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на
+              «Улисса» Джеймса Джойса?</p>
+          </article>
         </a>
       </li>
       <li class="section__lots-list__item">
         <a href="#">
-          <article></article>
+          <article>
+            <h3 class="lots-list__item__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+            <p class="lots-list__item__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее
+              на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не
+              знали, что это — одна из революционных работ Кандинского?</p>
+          </article>
         </a>
       </li>
     </ul>
-    <a class="section__view-more" href="#">Посмотреть больше</a>
+    <a class="section__view-more-link" href="#">Посмотреть больше</a>
   </section>
 
   <!-- Раздел об аукционе -->
 
-  <section>
+  <section class="section-about">
     <div>
-      <img src="images/logo-white.svg" alt="Логотип &quot;Оно Тебе Надо&quot;"/>
+      <img class="section__about-logo" src="images/logo-white.svg" alt="Логотип &quot;Оно Тебе Надо&quot;"/>
     </div>
     <div>
-      <h2 class="section__about-title">Об аукционе</h2>
+      <h2 class="section__h2-title">Об аукционе</h2>
       <p class="section__about-text">
         Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны
         были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может
@@ -95,7 +117,7 @@
 </main>
 
 <footer class="footer">
-  <address class="header__address">
+  <address class="address">
 
   </address>
   <nav class="footer__nav" aria-label="Навигация по страницам сайта" role="navigation">

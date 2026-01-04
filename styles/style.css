@@ -1,1 +1,161 @@
-/* место для вашего кода */
+.page {
+  box-sizing: border-box;
+  padding: 0 24px;
+  font-family: Raleway, sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 96px 50px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.current-page {
+  text-decoration: none;
+  /* TODO: Убрать точку перед текущей страницей */
+}
+
+.header__logo-img {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  max-width: 240px;
+  justify-self: end;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.section-banner {
+  position: relative;
+  color: white;
+  margin-bottom: 180px;
+}
+
+.section__cover {
+  width: 100%;
+  height: 757px;
+  background-size: cover;
+  background-image: url("../images/cover.jpg");
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.section__cover-title {
+  font-weight: 700;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 30%;
+}
+
+.section__cover-title .span {
+  display: block;
+  margin: 20px;
+}
+
+.section__cover-title__first-word {
+  text-align: start;
+}
+
+.section__cover-title__second-word {
+  text-align: center;
+}
+
+.section__cover-title__third-word {
+  text-align: end;
+}
+
+.section__cover-description {
+  display: flex;
+  align-items: center;
+  align-self: end;
+  justify-content: space-between;
+}
+
+.section__cover-description__text {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 22px;
+  word-spacing: 15px;
+}
+
+.section__cover-description__button {
+  padding: 11px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.section-lots {
+  padding: 0 40px;
+  margin-bottom: 120px;
+}
+
+.section__h2-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.section__lots-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.section__lots-list__item {
+
+}
+
+.section__view-more-link {
+
+}
+
+.section-about {
+  margin-bottom: 180px;
+}
+
+.section__about-logo {
+
+}
+
+.section__about-text {
+}
+
+.footer__nav {
+}
+
+.social {
+}
+
+.social__list {
+}
+
+.social-list__item {
+}
